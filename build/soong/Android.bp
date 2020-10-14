@@ -1,12 +1,4 @@
 bootstrap_go_package {
-    name: "soong-altermis",
-    pkgPath: "altermis/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-altermis-generator",
     pkgPath: "altermis/soong/generator",
     deps: [
