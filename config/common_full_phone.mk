@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_default.mk)
 
 # Inherit Altermis products.
-$(call inherit-product, vendor/nortical/config/common.mk)
+$(call inherit-product, vendor/altermis/config/common.mk)
 
 # Shared java libs
 PRODUCT_PACKAGES += \

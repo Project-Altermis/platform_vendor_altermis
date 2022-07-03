@@ -20,16 +20,8 @@ $(call inherit-product, vendor/altermis/config/versioning.mk)
 # Inherit from our overlay
 $(call inherit-product, vendor/altermis/config/overlay.mk)
 
-# Kernel
-include vendor/altermis/config/BoardConfigKernel.mk
-
-# Qcom-specific bits
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include vendor/altermis/config/BoardConfigQcom.mk
-endif
-
-# Soong
-include vendor/altermis/config/BoardConfigSoong.mk
+# Inherit our kernel/header generator
+$(call inherit-product, vendor/altermis/config/BoardConfigAltermis.mk)
 
 # Screen resolution
 TARGET_SCREEN_WIDTH ?= 1080
